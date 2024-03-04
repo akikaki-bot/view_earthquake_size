@@ -26,7 +26,7 @@ function Init() {
         preferCanvas: true
     })
     Promise.all([
-        fetch("../geojson/Cities.json").then(r => r.ok ? r.json() : null).then(geojson => {
+        fetch("/geojson/Cities.json").then(r => r.ok ? r.json() : null).then(geojson => {
             const japanCitysGeo = L.geoJSON(geojson, {
                 style: function (geojson) {
                     return {
@@ -37,7 +37,7 @@ function Init() {
                 }
             }).addTo(Map)
         }),
-        fetch("../geojson/japan.json").then(r => r.ok ? r.json() : null).then(geojson => {
+        fetch("/geojson/japan.json").then(r => r.ok ? r.json() : null).then(geojson => {
             const japanCitysGeo = L.geoJSON(geojson, {
                 style: function (geojson) {
                     return {
