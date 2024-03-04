@@ -1,0 +1,35 @@
+
+.infomation_container {
+    position : absolute;
+    top : 0px;
+    left : 0px;
+    padding-left : 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    width : 100%;
+    height : 11%;
+    background-color : #0a1e42f0;
+    color : #FFF;
+    opacity : 1;
+    z-index : 9999;
+}
+
+.infomation_subtitle {
+    font-size : 10px;
+}
+
+.infomation_description {
+    font-size : 15px;
+    margin-top : 10px;
+}
+
+.infomation_description > .strongB {
+    background-color : #142191;
+}
+
+.infomation_description > .strongR {
+    background-color : #73103e;
+}
+
+.infomation_count {
+    font-size : 30px;
+}
